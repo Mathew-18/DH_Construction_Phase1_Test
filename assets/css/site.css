@@ -1,0 +1,80 @@
+/* The header occupies its own row. It never overlays the page's hero. */
+.dh-header, .dh-footer {
+  --dh-green: #235f38;
+  --dh-gold: #be9851;
+  font: 500 1rem/1.5 Poppins, Arial, sans-serif;
+}
+.dh-header {
+  position: relative;
+  z-index: 1010;
+  color: #183328;
+  background: #fff;
+  border-bottom: 1px solid #dddcd1;
+}
+.dh-bar, .dh-foot-grid, .dh-foot-base, .dh-shortcuts {
+  width: min(1200px, calc(100% - 48px));
+  margin-inline: auto;
+}
+.dh-bar { min-height: 76px; display: flex; align-items: center; justify-content: space-between; }
+.dh-header a, .dh-footer a { color: inherit; text-decoration: none; }
+.dh-logo img { display: block; width: 90px; height: 60px; object-fit: contain; }
+.dh-menu, .dh-menu ul, .dh-footer ul { margin: 0; padding: 0; list-style: none; }
+.dh-menu, .dh-service-item { display: flex; align-items: center; }
+.dh-menu { gap: 8px; }
+.dh-menu a, .dh-services summary, .dh-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 8px 12px; font-size: .92rem;
+}
+.dh-menu a:hover, .dh-services summary:hover, .dh-menu a[aria-current], .dh-menu a.dh-parent {
+  color: var(--dh-green); background: #edf4ed; border-radius: 5px;
+}
+.dh-menu a[aria-current], .dh-menu a.dh-parent { text-decoration: underline; text-underline-offset: 5px; }
+.dh-services { position: relative; }
+.dh-services summary { min-width: 44px; cursor: pointer; list-style: none; }
+.dh-services summary::-webkit-details-marker { display: none; }
+.dh-services summary::after {
+  content: ""; width: 8px; height: 8px; border: solid currentColor; border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.dh-services[open] summary::after { transform: rotate(225deg); }
+.dh-services ul {
+  position: absolute; right: 0; top: 100%; width: 240px; padding: 8px;
+  background: white; border: 1px solid #dce4dc; border-radius: 8px; box-shadow: 0 12px 32px #15352222;
+}
+.dh-services a { width: 100%; justify-content: flex-start; }
+.dh-menu a.dh-quote { color: white; background: var(--dh-green); border-radius: 5px; margin-left: 8px; padding-inline: 18px; }
+.dh-menu a.dh-quote:hover { background: #18492a; }
+.dh-toggle { gap: 8px; color: var(--dh-green); background: white; border: 1px solid #abbfaf; border-radius: 5px; }
+.dh-toggle[hidden] { display: none; }
+.dh-header :focus-visible, .dh-footer :focus-visible { outline: 3px solid #b87f16; outline-offset: 2px; }
+.dh-footer { background: #143529; color: #f8f6ed; border-top: 3px solid var(--dh-gold); }
+.dh-foot-grid { display: grid; grid-template-columns: 1.4fr .8fr 1.1fr 1.1fr; gap: 32px; padding-block: 52px 32px; }
+.dh-footer .dh-wordmark { font: 700 1.65rem/1.2 "Playfair Display", Georgia, serif; color: #fff; }
+.dh-footer h2 { color: #f1d29a; font: 600 1rem/1.5 Poppins, Arial, sans-serif; margin: 0 0 8px; }
+.dh-footer p { color: #dae5dd; font-size: .9rem; line-height: 1.65; margin: 12px 0 0; }
+.dh-footer a { display: inline-flex; align-items: center; min-height: 36px; font-size: .92rem; overflow-wrap: anywhere; }
+.dh-footer a:hover { color: #fff; text-decoration: underline; }
+.dh-shortcuts { padding-bottom: 16px; }
+.dh-shortcuts summary { width: fit-content; padding-block: 10px; cursor: pointer; }
+.dh-shortcuts ul { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.dh-foot-base { border-top: 1px solid #4a6557; padding-block: 20px; font-size: .84rem; }
+@media (max-width: 991px) {
+  .dh-bar { flex-wrap: wrap; min-height: 64px; }
+  .dh-logo img { width: 78px; height: 52px; }
+  .dh-menu { display: block; width: 100%; padding-block: 4px 12px; }
+  .dh-toggle:not([hidden])[aria-expanded="false"] + .dh-menu { display: none; }
+  .dh-menu a { justify-content: flex-start; }
+  .dh-service-item { display: grid; grid-template-columns: 1fr auto; align-items: start; position: relative; }
+  .dh-services { display: contents; }
+  .dh-services summary { grid-column: 2; }
+  .dh-services ul { position: static; grid-column: 1 / -1; width: 100%; box-shadow: none; }
+  .dh-menu a.dh-quote { margin: 4px 0 0; }
+  .dh-foot-grid { grid-template-columns: 1fr 1fr; }
+  .dh-footer a { min-height: 44px; }
+}
+@media (max-width: 575px) {
+  .dh-bar, .dh-foot-grid, .dh-foot-base, .dh-shortcuts { width: calc(100% - 32px); }
+  .dh-foot-grid { grid-template-columns: 1fr; gap: 22px; padding-block: 32px 20px; }
+}
+.dh-footer .dh-profiles { display: flex; gap: 14px; align-items: center; margin-top: 16px; }
+.dh-profiles span { color: #b9c7bf; }

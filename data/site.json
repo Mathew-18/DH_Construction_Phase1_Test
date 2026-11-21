@@ -1,0 +1,145 @@
+{
+  "logo": "Contact/logo.png",
+  "navigation": {
+    "Home": "index.html",
+    "About": "about/about.html",
+    "Services": "services/All_services.html",
+    "Projects": "Projects/projects.html",
+    "Contact": "Contact/contact.html"
+  },
+  "services": {
+    "Building Construction": "services/Buliding_Construction.html",
+    "Building Renovation": "services/Building_rennovation.html",
+    "Interior Design": "services/interior_designs.html",
+    "Office Infrastructure": "services/Infrastructure.html",
+    "Glass Partitions": "services/Glass.html",
+    "False Ceiling & Painting": "services/falseceling.html"
+  },
+  "contact": {
+    "phone": "+919042356696",
+    "phone_label": "+91 90423 56696",
+    "email": "info@dhconstruction.in",
+    "whatsapp": "https://wa.me/919042356696"
+  },
+  "pages": {
+    "index.html": {
+      "description": "Building timeless spaces with precision & passion. 15+ years of trusted construction, renovation and interior excellence across Chennai.",
+      "location": "Pallavaram, Chennai",
+      "sections": {
+        "contact": "Contact"
+      }
+    },
+    "about/about.html": {
+      "description": "Chennai's trusted renovation partner for over 15 years. Quality craftsmanship, transparent pricing, and on-time delivery — every time.",
+      "location": "Chennai, Tamil Nadu, India",
+      "hours": "Mon-Sat: 9AM - 7PM"
+    },
+    "services/All_services.html": {
+      "description": "Expert building renovation and remodeling services in Chennai. Trusted by 200+ homeowners and businesses for quality craftsmanship and reliable delivery.",
+      "location": "Chennai, Tamil Nadu, India",
+      "footer_id": "contact",
+      "hours": "Mon–Sat: 8 AM – 7 PM",
+      "sections": {
+        "process": "Process",
+        "home": "Home Renovation",
+        "kitchen": "Kitchen Remodeling",
+        "bathroom": "Bathroom Renovation",
+        "commercial": "Commercial Renovation",
+        "interior": "Interior Redesign",
+        "flooring": "Flooring & Tiling"
+      }
+    },
+    "Projects/projects.html": {
+      "description": "Expert building renovation and remodeling services in Chennai. Trusted by 200+ homeowners and businesses for quality craftsmanship and reliable delivery.",
+      "location": "Chennai, Tamil Nadu, India",
+      "footer_id": "contact",
+      "hours": "Mon–Sat: 8 AM – 7 PM",
+      "sections": {
+        "process": "Process",
+        "projects": "Projects"
+      }
+    },
+    "Contact/contact.html": {
+      "description": "Expert building construction, renovation and interior services in Chennai. Trusted by 200+ homeowners and businesses for quality craftsmanship and reliable delivery.",
+      "location": "Chennai, Tamil Nadu, India",
+      "footer_id": "footer",
+      "hours": "Mon–Sat: 8 AM – 7 PM"
+    },
+    "services/Buliding_Construction.html": {
+      "description": "Building timeless spaces with precision and passion. Your trusted partner for construction, renovation, and interior solutions in Chennai for over 15 years.",
+      "location": "Pallavaram, Chennai – 600043",
+      "sections": {
+        "about": "About Us",
+        "services": "Service details",
+        "projects": "Projects",
+        "gallery": "Gallery",
+        "contact": "Contact"
+      }
+    },
+    "services/Building_rennovation.html": {
+      "description": "Expert building renovation and remodeling services in Chennai. Transforming homes and commercial spaces with 15+ years of experience, premium materials, and dedicated craftsmanship.",
+      "location": "Pallavaram, Chennai – 600043",
+      "sections": {
+        "about": "About",
+        "services": "Service details",
+        "process": "Process",
+        "projects": "Projects",
+        "contact": "Contact"
+      }
+    },
+    "services/interior_designs.html": {
+      "description": "Premium interior design & fit-out solutions in Chennai. Transforming spaces with 15+ years of experience, skilled craftsmanship, and a passion for perfection.",
+      "location": "Pallavaram, Chennai 600043",
+      "sections": {
+        "spaces": "Interior spaces",
+        "process": "Our Process",
+        "testimonials": "Reviews",
+        "faq": "FAQ",
+        "contact": "Contact"
+      }
+    },
+    "services/Infrastructure.html": {
+      "description": "Chennai's trusted office infrastructure & fit-out partner. 15+ years of delivering productive workspaces for startups, SMEs, and enterprises.",
+      "location": "Pallavaram, Chennai 600043",
+      "sections": {
+        "services": "Service details",
+        "process": "Our Process",
+        "projects": "Projects",
+        "testimonials": "Reviews",
+        "faq": "FAQ",
+        "contact": "Contact"
+      }
+    },
+    "services/Glass.html": {
+      "description": "Chennai's trusted partition specialists. 500+ glass and gypsum partition installations with 15+ years of precision workmanship.",
+      "location": "Pallavaram, Chennai 600043",
+      "sections": {
+        "types": "Partition types",
+        "compare": "Compare",
+        "specs": "Specifications",
+        "industries": "Industries",
+        "timeline": "Timeline",
+        "projects": "Projects",
+        "faq": "FAQ"
+      }
+    },
+    "services/falseceling.html": {
+      "description": "Chennai's trusted false ceiling and painting specialists. 600+ projects with flawless joint-free finishes and premium paint work.",
+      "location": "Pallavaram, Chennai 600043",
+      "sections": {
+        "ceilings": "Ceiling types",
+        "painting": "Painting Services",
+        "workflow": "Workflow",
+        "materials": "Materials",
+        "estimator": "Cost Calculator",
+        "faq": "FAQ"
+      }
+    }
+  },
+  "social_profiles": {
+    "Facebook": null,
+    "Instagram": null,
+    "YouTube": null,
+    "LinkedIn": null
+  }
+}
